@@ -1,0 +1,110 @@
+<!--TODO devon 22/9/13 what is this a webapp for 90s kids-->
+<!--TODO devon 22/9/13 LMAO i need to set up an action for deployment omg-->
+<html>
+
+<head>
+    <link rel="shortcut icon" href="src/assets/yinyang.ico" type="image/x-icon">
+    <link rel="icon" href="src/assets/yinyang.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="og:site_name" content="Doctor/Master pairing Sorting">
+    <meta name="og:description" content="A simple website for sorting Doctor/Master pairings in a formatted list.">
+    <meta name="og:image"
+        content="https://static.wikia.nocookie.net/shipping/images/5/59/Screenshot_2020-04-29_at_9.20.23_PM.png/revision/latest?cb=20200430012106">
+    <title>Doctor/Master pairing Sorting</title>
+
+    <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
+    <script src="src/js/data.js"></script>
+    <!--TODO devon 22/9/13: Idk if this is genius or terrible but we should probably avoid having to copy paste a file to preserve old saves-->
+    <script src="src/js/data/2022-09-13.js"></script>
+
+    <script src="src/js/html2canvas.min.js"></script>
+    <script src="src/js/lz-string.min.js"></script>
+    <script src="src/js/seedrandom.min.js"></script>
+    <script src="src/js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="progress">
+            <span class="progressbattle"></span>
+            <div class="progressbar">
+                <div class="progressfill"><span class="progresstext"></span></div>
+            </div>
+        </div>
+
+        <div class="sorter">
+            <img src="src/assets/masters.webp" class="left sort image">
+
+            <div class="starting start button">Doctor/Master Project pairing Sorter<br><br>Click to Start!</div>
+            <div class="starting load button">Load <span></span></div>
+
+            <div class="loading button">
+                <div></div><span>Loading...</span>
+            </div>
+
+            <div class="sorting tie button">Tie</div>
+            <div class="sorting undo button">Undo</div>
+            <div class="sorting save button">Save Progress</div>
+
+            <div class="finished save button">Generate Result URL</div>
+            <div class="finished getimg button">Generate Image</div>
+            <div class="finished list button">Generate Text List</div>
+
+            <img src="src/assets/doctors.webp" class="right sort image">
+
+            <div class="left sort text">
+                <p></p>
+            </div>
+            <div class="right sort text">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="options"></div>
+        <div class="image selector">Display Images on Result: </div>
+        <div class="time taken"></div>
+        <div class="results"></div>
+
+        <div class="info">
+            <a href="https://github.com/execfera/charasort/">Source Code</a> | <a href="">Best Taste</a> | <a
+                class="clearsave">Clear Save Data</a>
+
+            <br><br>
+
+            <p>Sorter for Doctor/Master pairings. Pick your sources, and hit the Start button.</p>
+            <p><strong>Certain options have details that you can hover to read.</strong></p>
+            <p>Click on the pairing you like better from the two, or tie them if you like them equally or don't know
+                them.</p>
+            <p>Depending on how many sources you pick, you'll get up to 500+ picks, so set aside a good few cups of tea
+                for this.</p>
+
+            <br><br>
+
+            <p>Keyboard controls during sorting: H/LeftArrow (pick left) J/DownArrow (undo) K/UpArrow (tie) L/RightArrow
+                (pick right) S (save progress).</p>
+            <p>Before sorting: S/Enter (start sorting) L (load progress).
+            <p>1/2/3 always correspond to the first/second/third buttons.</p>
+
+            <br><br>
+
+            <p>Inspired by <a href="http://mainyan.sakura.ne.jp/thsort.html">this site</a>. Originally a fork of <a
+                    href="https://execfera.github.io/charasort/"> charasort</a>. Thumbnail Art: <a
+                    href="http://www.tasofro.net/">alphes</a>, <a
+                    href="http://www.pixiv.net/member.php?id=743845">kaoru</a>, <a
+                    href="http://www.pixiv.net/member.php?id=4920496">dairi</a>. Splash Art: <a
+                    href="http://kahluamilk.la.coocan.jp/illust/2004/056_hyakkiyakou.jpg">toto nemigi</a>.</p>
+
+            <br><br>
+
+            <p>May 9th, 2021 - Added Unconnected Marketeers (full).</p>
+            <p>March 29th, 2021 - Added Unconnected Marketeers (trial).</p>
+            <p>October 5th, 2019 - Added filter for nameless pairings.</p>
+            <p>October 4th, 2019 - Added Wily Beast and Weakest Creature (full).</p>
+        </div>
+    </div>
+</body>
+
+</html>
